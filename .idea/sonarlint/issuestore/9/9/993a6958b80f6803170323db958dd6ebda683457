@@ -1,0 +1,19 @@
+
+’python:S1192B"MDefine a constant instead of duplicating this literal 'courses.json' 3 times.(µÌ·À8ÇÉ2J$7611f431-a49d-4caa-a3d8-bac382d65ef4
+¦python:S1192E"\Define a constant instead of duplicating this literal 'BSc. Information Technology' 7 times.(áĞ›úÿÿÿÿ8ÈÉ2J$c5163d5f-095b-4f0b-a674-cb96168ee189
+–python:S1192"LDefine a constant instead of duplicating this literal 'indexes.csv' 3 times.(ãê‰£úÿÿÿÿ8ÈÉ2J$190bdd19-acdf-4969-bec2-a05ab10507d4
+©python:S3699?"dRemove this use of the output from "raise_for_status"; "raise_for_status" doesnâ€™t return anything.(Ãè‰ø8ÈÉ2J$92bcd68d-95a8-4932-927d-c420140c5d1f
+tpython:S1862v"*This branch duplicates the one on line 91.(â‚¿‡øÿÿÿÿ8ÈÉ2J$e64a7868-8661-4989-955a-080415dc650a
+python:S3457Q"EAdd replacement fields or use a normal string instead of an f-string.(³ôèÊúÿÿÿÿ8ÉÉ2J$afc4ca1c-3313-4c41-9da9-4f38e2ec0c61
+python:S3457V"EAdd replacement fields or use a normal string instead of an f-string.(˜Áï‹ÿÿÿÿÿ8ÉÉ2J$720348b1-61a4-4e79-81de-cf7f057007ad
+python:S3457_"EAdd replacement fields or use a normal string instead of an f-string.(³ôèÊúÿÿÿÿ8ÉÉ2J$81987f59-1bf3-468a-b23f-9f2b7f9801df
+python:S3457e"EAdd replacement fields or use a normal string instead of an f-string.(˜Áï‹ÿÿÿÿÿ8ÉÉ2J$cd25588f-c45c-466e-916c-d38a5387bab7
+Špython:S3457k"EAdd replacement fields or use a normal string instead of an f-string.(¤ î´8ÉÉ2J$26e642f8-b0e9-4fdc-b86c-9ead8be3b857
+Špython:S3457q"EAdd replacement fields or use a normal string instead of an f-string.(¤ î´8ÉÉ2J$d9c3f830-6cd8-44b1-873e-203526f8d3a2
+python:S3457{"EAdd replacement fields or use a normal string instead of an f-string.(³ôèÊúÿÿÿÿ8ÊÉ2J$c93016f5-b247-41a2-9d94-e8751930faea
+python:S3457"EAdd replacement fields or use a normal string instead of an f-string.(˜Áï‹ÿÿÿÿÿ8ËÉ2J$ec05c855-aacf-42d0-b453-809fdca1ac6d
+python:S3457‡"EAdd replacement fields or use a normal string instead of an f-string.(ßæµÍüÿÿÿÿ8ËÉ2J$c3d2536f-8d0c-4226-9f67-90d0c75da50c
+‹python:S3457"EAdd replacement fields or use a normal string instead of an f-string.(¤ î´8ËÉ2J$14d7ff99-0c7a-488b-b7e7-686f4368c540
+‹python:S3457“"EAdd replacement fields or use a normal string instead of an f-string.(°ø“ü8ƒ–É2J$a7d08948-5be4-48bf-b617-312b3d141813
+python:S3457™"EAdd replacement fields or use a normal string instead of an f-string.(°”™³ÿÿÿÿÿ8ƒ–É2J$d5612c97-9bde-4dbe-ae42-f42a7f90b58c
+ipython:S125¡"Remove this commented out code.(™Ÿ«‰ÿÿÿÿÿ8ËÉ2J$824eb3e6-74ef-4c37-bb69-5e952d7cc0a6
