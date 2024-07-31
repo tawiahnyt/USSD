@@ -144,5 +144,6 @@ def main():
             result_details = result_response.json()
             display_results(result_details)
 
+
 if __name__ == "__main__":
     main()
