@@ -33,10 +33,14 @@ def get_valid_password(student_id):
             print('Password is incorrect. Please try again.')
 
 
-def print_account_details(account_details):
+def account(account_details):
     name = f"{account_details.get('first_name', '')} {account_details.get('last_name', '')}"
     if account_details.get('other_name'):
         name += f" {account_details.get('other_name')}"
+    if account_details.get('registration_status') == 0:
+        status = 'Unregistered'
+    else:
+        status = 'Registered'
     print(
         f"Name: {name}\n"
         f"Student ID: {account_details.get('student_id')}\n"
@@ -49,11 +53,10 @@ def print_account_details(account_details):
         f"Gender: {account_details.get('gender')}\n"
         f"Enrollment Date: {account_details.get('enrollment_date')}\n"
         f"Graduation Date: {account_details.get('graduation_date')}\n"
-        f"Student Type: {account_details.get('student_type')}\n")
+        f"Student Type: {account_details.get('student_type')}\n"
+        f"Registration Status: {status}\n")
 
-    choice = int(input('\nPress 0 to go to the main menu: '))
-    if choice == 0:
-        return home()
+    go_home()
 
 
 def display_results(result_details):
@@ -73,18 +76,19 @@ def display_results(result_details):
 
     if level == 100:
         print('No results to show')
+        go_home()
     elif level == 200:
         choice = int(input('Select a result to view\n1. Level 100 First Semester\n2. Level 100 Second Semester\n'))
         if choice == 1:
             print('Level 100 First Semester Results\n')
             for course in l100_first_semester:
                 course_code = course['course_code']
-                print(f"{course_code} - {course['course_title']} - {result_details.get(course_code.replace('-', '_'), 'N/A')}")
+                print(f"{course_code} - {course['course_title']} - {result_details.get(course_code.replace('-', '_'))}")
         elif choice == 2:
             print('Level 100 Second Semester Results\n')
             for course in l100_second_semester:
                 course_code = course['course_code']
-                print(f"{course_code} - {course['course_title']} - {result_details.get(course_code.replace('-', '_'), 'N/A')}")
+                print(f"{course_code} - {course['course_title']} - {result_details.get(course_code.replace('-', '_'))}")
     elif level == 300:
         choice = int(input('Select a result to view\n1. Level 100 First Semester\n2. Level 100 Second Semester\n'
                            '3. Level 200 First Semester\n4. Level 200 Second Semester\n5. Level 300 First Semester\n'
@@ -123,6 +127,35 @@ def display_results(result_details):
             print('Invalid Input!')
 
 
+def register_courses(courses_details, api_token):
+    account_response = requests.get(f'{USSD_URL}/account', headers={'Authorization': f'Bearer {api_token}'})
+    account_response.raise_for_status()
+    registration_status = account_response.json().get('registration_status')
+
+    n = 1
+    for course in courses_details:
+        print(f"{n}. {course['course_code']} - {course['course_title']}")
+        n += 1
+
+    choice = int(input('Press 1 to register all courses: '))
+
+    if choice == 1 and registration_status == 0:
+        registration_response = requests.patch(f'{USSD_URL}/complete_registration',
+                                               headers={'Authorization': f'Bearer {api_token}'})
+        registration_response.raise_for_status()
+        print("Course Registration successful.")
+    else:
+        print('You have been registered already')
+
+    go_home()
+
+
+def go_home():
+    choice = int(input('\nPress 0 to go to the main menu: '))
+    if choice == 0:
+        return home()
+
+
 def home():
     global api_token
     home_response = requests.get(f'{USSD_URL}/home', headers={'Authorization': f'Bearer {api_token}'})
@@ -137,13 +170,19 @@ def home():
         account_response = requests.get(f'{USSD_URL}/account', headers={'Authorization': f'Bearer {api_token}'})
         account_response.raise_for_status()
         account_details = account_response.json()
-        print_account_details(account_details)
+        account(account_details)
 
     elif user_response == 2:
         result_response = requests.get(f'{USSD_URL}/results', headers={'Authorization': f'Bearer {api_token}'})
         result_response.raise_for_status()
         result_details = result_response.json()
         display_results(result_details)
+
+    elif user_response == 3:
+        courses_response = requests.get(f'{USSD_URL}/courses', headers={'Authorization': f'Bearer {api_token}'})
+        courses_response.raise_for_status()
+        courses_details = courses_response.json()
+        register_courses(courses_details, api_token)
 
 
 def main():
