@@ -34,8 +34,11 @@ def get_valid_password(student_id):
 
 
 def print_account_details(account_details):
+    name = f"{account_details.get('first_name', '')} {account_details.get('last_name', '')}"
+    if account_details.get('other_name'):
+        name += f" {account_details.get('other_name')}"
     print(
-        f"Name: {account_details.get('first_name')} {account_details.get('last_name')} {account_details.get('other_names')}\n"
+        f"Name: {name}\n"
         f"Student ID: {account_details.get('student_id')}\n"
         f"Programme: {account_details.get('degree_programmes')}\n"
         f"Level: {account_details.get('level')}\n"
@@ -48,9 +51,12 @@ def print_account_details(account_details):
         f"Graduation Date: {account_details.get('graduation_date')}\n"
         f"Student Type: {account_details.get('student_type')}\n")
 
+    choice = int(input('\nPress 0 to go to the main menu: '))
+    if choice == 0:
+        return home()
+
 
 def display_results(result_details):
-
     # Load course data from the JSON file
     with open('courses.json') as file:
         data = json.load(file)
@@ -117,32 +123,38 @@ def display_results(result_details):
             print('Invalid Input!')
 
 
+def home():
+    global api_token
+    home_response = requests.get(f'{USSD_URL}/home', headers={'Authorization': f'Bearer {api_token}'})
+    home_response.raise_for_status()
+    user_name = home_response.json().get('first_name')
+    print(f"Welcome {user_name}! What would you like to do today?")
+
+    user_response = int(input('1. My Account\n2. Check Results\n3. Register Courses\n4. Time Table\n'
+                              '5. School Calendar\n6. Log Out\nEnter an option to proceed: '))
+
+    if user_response == 1:
+        account_response = requests.get(f'{USSD_URL}/account', headers={'Authorization': f'Bearer {api_token}'})
+        account_response.raise_for_status()
+        account_details = account_response.json()
+        print_account_details(account_details)
+
+    elif user_response == 2:
+        result_response = requests.get(f'{USSD_URL}/results', headers={'Authorization': f'Bearer {api_token}'})
+        result_response.raise_for_status()
+        result_details = result_response.json()
+        display_results(result_details)
+
+
 def main():
+    global api_token
     short_code = '*123*112#'
     if short_code == USSD_SHORTCODE:
         print("Welcome to GCTU SIP USSD.\nLogin with your credentials to proceed")
         student_id = get_valid_student_id()
         api_token = get_valid_password(student_id)
 
-        home_response = requests.get(f'{USSD_URL}/home', headers={'Authorization': f'Bearer {api_token}'})
-        home_response.raise_for_status()
-        user_name = home_response.json().get('first_name')
-        print(f"Welcome {user_name}! What would you like to do today?")
-
-        user_response = int(input('1. My Account\n2. Check Results\n3. Register Courses\n4. Time Table\n'
-                                  '5. School Calendar\n6. Log Out\nEnter an option to proceed: '))
-
-        if user_response == 1:
-            account_response = requests.get(f'{USSD_URL}/account', headers={'Authorization': f'Bearer {api_token}'})
-            account_response.raise_for_status()
-            account_details = account_response.json()
-            print_account_details(account_details)
-
-        elif user_response == 2:
-            result_response = requests.get(f'{USSD_URL}/results', headers={'Authorization': f'Bearer {api_token}'})
-            result_response.raise_for_status()
-            result_details = result_response.json()
-            display_results(result_details)
+        home()
 
 
 if __name__ == "__main__":

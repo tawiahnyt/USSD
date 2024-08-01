@@ -10,8 +10,6 @@
 test.ipynb,9\0\90479d8bc9f8dfa7116261e4ed6ed71a98437648
 9
 	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
-=
-download.html,2\9\290dff429b6456c522d4d53ac1c575791e7ebf5a
 <
 courses.json,a\2\a236a7ddb8ee61146aee9e222ae8344f9f3893f5
 7
