@@ -78,53 +78,96 @@ def display_results(result_details):
         print('No results to show')
         go_home()
     elif level == 200:
-        choice = int(input('Select a result to view\n1. Level 100 First Semester\n2. Level 100 Second Semester\n'))
+        choice = int(input('1. Level 100 First Semester\n2. Level 100 Second Semester\n3. Level 200 First Semester\n'
+                           '4. Level 200 Second Semester\nSelect an option to continue: '))
         if choice == 1:
             print('Level 100 First Semester Results\n')
             for course in l100_first_semester:
                 course_code = course['course_code']
                 print(f"{course_code} - {course['course_title']} - {result_details.get(course_code.replace('-', '_'))}")
+            go_home()
         elif choice == 2:
             print('Level 100 Second Semester Results\n')
             for course in l100_second_semester:
                 course_code = course['course_code']
                 print(f"{course_code} - {course['course_title']} - {result_details.get(course_code.replace('-', '_'))}")
+            go_home()
     elif level == 300:
-        choice = int(input('Select a result to view\n1. Level 100 First Semester\n2. Level 100 Second Semester\n'
-                           '3. Level 200 First Semester\n4. Level 200 Second Semester\n5. Level 300 First Semester\n'
-                           '6. Level 300 Second Semester\n'))
+        choice = int(input('1. Level 100 First Semester\n2. Level 100 Second Semester\n3. Level 200 First Semester\n'
+                           '4. Level 200 Second Semester\nSelect an option to continue: '))
         if choice == 1:
             print('Level 100 First Semester Results\n')
             for course in l100_first_semester:
                 course_code = course['course_code']
                 print(f"{course_code} - {course['course_title']} - {result_details.get(course_code.replace('-', '_'))}")
+            go_home()
         elif choice == 2:
             print('Level 100 Second Semester Results\n')
             for course in l100_second_semester:
                 course_code = course['course_code']
                 print(f"{course_code} - {course['course_title']} - {result_details.get(course_code.replace('-', '_'))}")
+            go_home()
         elif choice == 3:
             print('Level 200 First Semester Results\n')
             for course in l200_first_semester:
                 course_code = course['course_code']
                 print(f"{course_code} - {course['course_title']} - {result_details.get(course_code.replace('-', '_'))}")
+            go_home()
         elif choice == 4:
             print('Level 200 Second Semester Results\n')
             for course in l200_second_semester:
                 course_code = course['course_code']
                 print(f"{course_code} - {course['course_title']} - {result_details.get(course_code.replace('-', '_'))}")
+            go_home()
+        else:
+            print('Invalid Input!')
+            go_home()
+    elif level == 400:
+        choice = int(input('1. Level 100 First Semester\n2. Level 100 Second Semester\n3. Level 200 First Semester\n'
+                           '4. Level 200 Second Semester\n5. Level 300 First Semester\n6. Level 300 Second Semester\n'
+                           'Select an option to continue: '))
+        if choice == 1:
+            print('Level 100 First Semester Results\n')
+            for course in l100_first_semester:
+                course_code = course['course_code']
+                print(f"{course_code} - {course['course_title']} - {result_details.get(course_code.replace('-', '_'))}")
+            go_home()
+        elif choice == 2:
+            print('Level 100 Second Semester Results\n')
+            for course in l100_second_semester:
+                course_code = course['course_code']
+                print(f"{course_code} - {course['course_title']} - {result_details.get(course_code.replace('-', '_'))}")
+            go_home()
+        elif choice == 3:
+            print('Level 200 First Semester Results\n')
+            for course in l200_first_semester:
+                course_code = course['course_code']
+                print(f"{course_code} - {course['course_title']} - {result_details.get(course_code.replace('-', '_'))}")
+            go_home()
+        elif choice == 4:
+            print('Level 200 Second Semester Results\n')
+            for course in l200_second_semester:
+                course_code = course['course_code']
+                print(f"{course_code} - {course['course_title']} - {result_details.get(course_code.replace('-', '_'))}")
+            go_home()
         elif choice == 5:
             print('Level 300 First Semester Results\n')
             for course in l300_first_semester:
                 course_code = course['course_code']
                 print(f"{course_code} - {course['course_title']} - {result_details.get(course_code.replace('-', '_'))}")
+            go_home()
         elif choice == 6:
             print('Level 300 Second Semester Results\n')
             for course in l300_second_semester:
                 course_code = course['course_code']
                 print(f"{course_code} - {course['course_title']} - {result_details.get(course_code.replace('-', '_'))}")
+            go_home()
         else:
             print('Invalid Input!')
+            go_home()
+    else:
+        print('Invalid Input!')
+        go_home()
 
 
 def register_courses(courses_details, api_token):
