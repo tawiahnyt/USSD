@@ -59,6 +59,29 @@ def account(account_details):
     go_home()
 
 
+def grader(score):
+    if score >= 80:
+        return 'A'
+    elif score <= 75 and score < 80:
+        return 'A-'
+    elif score <= 70 and score < 75:
+        return 'B+'
+    elif score <= 65 and score < 70:
+        return 'B'
+    elif score <= 60 and score < 65:
+        return 'B-'
+    elif score <= 55 and score < 60:
+        return 'C+'
+    elif score <= 50 and score < 55:
+        return 'C'
+    elif score <= 45 and score < 50:
+        return 'C-'
+    elif score <= 40 and score < 45:
+        return 'D'
+    elif score < 40:
+        return 'F'
+    
+
 def display_results(result_details):
     # Load course data from the JSON file
     with open('courses.json') as file:
@@ -84,13 +107,13 @@ def display_results(result_details):
             print('Level 100 First Semester Results\n')
             for course in l100_first_semester:
                 course_code = course['course_code']
-                print(f"{course_code} - {course['course_title']} - {result_details.get(course_code.replace('-', '_'))}")
+                print(f"{course_code} - {course['course_title']} - {grader(result_details.get(course_code.replace('-', '_')))}")
             go_home()
         elif choice == 2:
             print('Level 100 Second Semester Results\n')
             for course in l100_second_semester:
                 course_code = course['course_code']
-                print(f"{course_code} - {course['course_title']} - {result_details.get(course_code.replace('-', '_'))}")
+                print(f"{course_code} - {course['course_title']} - {grader(result_details.get(course_code.replace('-', '_')))}")
             go_home()
     elif level == 300:
         choice = int(input('1. Level 100 First Semester\n2. Level 100 Second Semester\n3. Level 200 First Semester\n'
@@ -99,25 +122,25 @@ def display_results(result_details):
             print('Level 100 First Semester Results\n')
             for course in l100_first_semester:
                 course_code = course['course_code']
-                print(f"{course_code} - {course['course_title']} - {result_details.get(course_code.replace('-', '_'))}")
+                print(f"{course_code} - {course['course_title']} - {grader(result_details.get(course_code.replace('-', '_')))}")
             go_home()
         elif choice == 2:
             print('Level 100 Second Semester Results\n')
             for course in l100_second_semester:
                 course_code = course['course_code']
-                print(f"{course_code} - {course['course_title']} - {result_details.get(course_code.replace('-', '_'))}")
+                print(f"{course_code} - {course['course_title']} - {grader(result_details.get(course_code.replace('-', '_')))}")
             go_home()
         elif choice == 3:
             print('Level 200 First Semester Results\n')
             for course in l200_first_semester:
                 course_code = course['course_code']
-                print(f"{course_code} - {course['course_title']} - {result_details.get(course_code.replace('-', '_'))}")
+                print(f"{course_code} - {course['course_title']} - {grader(result_details.get(course_code.replace('-', '_')))}")
             go_home()
         elif choice == 4:
             print('Level 200 Second Semester Results\n')
             for course in l200_second_semester:
                 course_code = course['course_code']
-                print(f"{course_code} - {course['course_title']} - {result_details.get(course_code.replace('-', '_'))}")
+                print(f"{course_code} - {course['course_title']} - {grader(result_details.get(course_code.replace('-', '_')))}")
             go_home()
         else:
             print('Invalid Input!')
@@ -130,37 +153,37 @@ def display_results(result_details):
             print('Level 100 First Semester Results\n')
             for course in l100_first_semester:
                 course_code = course['course_code']
-                print(f"{course_code} - {course['course_title']} - {result_details.get(course_code.replace('-', '_'))}")
+                print(f"{course_code} - {course['course_title']} - {grader(result_details.get(course_code.replace('-', '_')))}")
             go_home()
         elif choice == 2:
             print('Level 100 Second Semester Results\n')
             for course in l100_second_semester:
                 course_code = course['course_code']
-                print(f"{course_code} - {course['course_title']} - {result_details.get(course_code.replace('-', '_'))}")
+                print(f"{course_code} - {course['course_title']} - {grader(result_details.get(course_code.replace('-', '_')))}")
             go_home()
         elif choice == 3:
             print('Level 200 First Semester Results\n')
             for course in l200_first_semester:
                 course_code = course['course_code']
-                print(f"{course_code} - {course['course_title']} - {result_details.get(course_code.replace('-', '_'))}")
+                print(f"{course_code} - {course['course_title']} - {grader(result_details.get(course_code.replace('-', '_')))}")
             go_home()
         elif choice == 4:
             print('Level 200 Second Semester Results\n')
             for course in l200_second_semester:
                 course_code = course['course_code']
-                print(f"{course_code} - {course['course_title']} - {result_details.get(course_code.replace('-', '_'))}")
+                print(f"{course_code} - {course['course_title']} - {grader(result_details.get(course_code.replace('-', '_')))}")
             go_home()
         elif choice == 5:
             print('Level 300 First Semester Results\n')
             for course in l300_first_semester:
                 course_code = course['course_code']
-                print(f"{course_code} - {course['course_title']} - {result_details.get(course_code.replace('-', '_'))}")
+                print(f"{course_code} - {course['course_title']} - {grader(result_details.get(course_code.replace('-', '_')))}")
             go_home()
         elif choice == 6:
             print('Level 300 Second Semester Results\n')
             for course in l300_second_semester:
                 course_code = course['course_code']
-                print(f"{course_code} - {course['course_title']} - {result_details.get(course_code.replace('-', '_'))}")
+                print(f"{course_code} - {course['course_title']} - {grader(result_details.get(course_code.replace('-', '_')))}")
             go_home()
         else:
             print('Invalid Input!')
@@ -226,6 +249,9 @@ def home():
         courses_response.raise_for_status()
         courses_details = courses_response.json()
         register_courses(courses_details, api_token)
+
+    else:
+        exit()
 
 
 def main():
