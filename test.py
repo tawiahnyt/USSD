@@ -2,8 +2,9 @@ import requests
 import pandas as pd
 import json
 
-USSD_URL = 'http://127.0.0.1:5000'
+# USSD_URL = 'http://127.0.0.1:5000'
 USSD_SHORTCODE = '*123*112#'
+USSD_URL = 'https://ussdapi-vv2j.onrender.com'
 
 
 def get_valid_student_id():
@@ -62,23 +63,23 @@ def account(account_details):
 def grader(score):
     if score >= 80:
         return 'A'
-    elif score <= 75 and score < 80:
+    elif score >= 75:
         return 'A-'
-    elif score <= 70 and score < 75:
+    elif score >= 70:
         return 'B+'
-    elif score <= 65 and score < 70:
+    elif score >= 65:
         return 'B'
-    elif score <= 60 and score < 65:
+    elif score >= 60:
         return 'B-'
-    elif score <= 55 and score < 60:
+    elif score >= 55:
         return 'C+'
-    elif score <= 50 and score < 55:
+    elif score >= 50:
         return 'C'
-    elif score <= 45 and score < 50:
+    elif score >= 45:
         return 'C-'
-    elif score <= 40 and score < 45:
+    elif score >= 40:
         return 'D'
-    elif score < 40:
+    else:
         return 'F'
     
 
