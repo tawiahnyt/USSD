@@ -14,3 +14,7 @@ test.ipynb,9\0\90479d8bc9f8dfa7116261e4ed6ed71a98437648
 courses.json,a\2\a236a7ddb8ee61146aee9e222ae8344f9f3893f5
 7
 test.py,a\3\a36e355ddb203d7d4133221f339dc406cb9f480f
+>
+arkesel_app.py,b\9\b9957c99e8425896c0af9a9e2bad031af6da63c1
+B
+arkesel_test.ipynb,c\f\cfa0ec1f94f62ac5931b7b3288c5085b0c84985a

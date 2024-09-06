@@ -2,9 +2,7 @@ import requests
 import pandas as pd
 import json
 
-# USSD_URL = 'http://127.0.0.1:5000'
-USSD_SHORTCODE = '*123*112#'
-USSD_URL = 'https://ussdapi-vv2j.onrender.com'
+USSD_URL = 'http://127.0.0.1:5000'
 
 
 def get_valid_student_id():
@@ -81,7 +79,7 @@ def grader(score):
         return 'D'
     else:
         return 'F'
-    
+
 
 def display_results(result_details):
     # Load course data from the JSON file
@@ -257,13 +255,11 @@ def home():
 
 def main():
     global api_token
-    short_code = '*123*112#'
-    if short_code == USSD_SHORTCODE:
-        print("Welcome to GCTU SIP USSD.\nLogin with your credentials to proceed")
-        student_id = get_valid_student_id()
-        api_token = get_valid_password(student_id)
+    print("Welcome to GCTU SIP USSD.\nLogin with your credentials to proceed")
+    student_id = get_valid_student_id()
+    api_token = get_valid_password(student_id)
 
-        home()
+    home()
 
 
 if __name__ == "__main__":

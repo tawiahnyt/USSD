@@ -1,19 +1,23 @@
 
-’python:S1192B"MDefine a constant instead of duplicating this literal 'courses.json' 3 times.(µÌ·À8Âã–”2J$8983950e-e1ae-4bef-bd1a-35aa4c2140ce
-¦python:S1192E"\Define a constant instead of duplicating this literal 'BSc. Information Technology' 7 times.(áĞ›úÿÿÿÿ8ÈÉ2J$3b22afef-0385-4ce9-b003-52443697315a
-–python:S1192"LDefine a constant instead of duplicating this literal 'indexes.csv' 3 times.(ãê‰£úÿÿÿÿ8ÈÉ2J$03bf2154-82fd-4489-b57a-2de37c46a9a2
-©python:S3699?"dRemove this use of the output from "raise_for_status"; "raise_for_status" doesnâ€™t return anything.(Ãè‰ø8ÈÉ2J$b4df7b09-4460-4d8f-8fb8-5ca3b1cb9531
-tpython:S1862v"*This branch duplicates the one on line 91.(â‚¿‡øÿÿÿÿ8ÈÉ2J$582d83ba-03b8-4c02-801c-ec89b8e4066e
-python:S3457Q"EAdd replacement fields or use a normal string instead of an f-string.(³ôèÊúÿÿÿÿ8ÉÉ2J$9ee8731b-6751-46db-ae04-95de173fde23
-python:S3457V"EAdd replacement fields or use a normal string instead of an f-string.(˜Áï‹ÿÿÿÿÿ8ÉÉ2J$90c4e447-f916-4358-bfbd-838263ad84b3
-python:S3457_"EAdd replacement fields or use a normal string instead of an f-string.(³ôèÊúÿÿÿÿ8ÉÉ2J$a99f4a6e-ff6c-490e-9ff8-c5ad1fc581cc
-python:S3457e"EAdd replacement fields or use a normal string instead of an f-string.(˜Áï‹ÿÿÿÿÿ8ÉÉ2J$ac3911af-6114-4552-a7f4-e17664aff37e
-Špython:S3457k"EAdd replacement fields or use a normal string instead of an f-string.(¤ î´8ÉÉ2J$eaa35886-3daf-4937-a5ac-9be9bb8d2f0c
-Špython:S3457q"EAdd replacement fields or use a normal string instead of an f-string.(¤ î´8ÉÉ2J$f7076aa1-2e19-4ecf-aeb2-cc92e3b09ebb
-python:S3457{"EAdd replacement fields or use a normal string instead of an f-string.(³ôèÊúÿÿÿÿ8ÊÉ2J$e7299735-a844-4f33-8a28-ef3c51c86fd9
-python:S3457"EAdd replacement fields or use a normal string instead of an f-string.(˜Áï‹ÿÿÿÿÿ8ËÉ2J$780a5ddc-3e0e-4d12-b833-812234646e3a
-python:S3457‡"EAdd replacement fields or use a normal string instead of an f-string.(ßæµÍüÿÿÿÿ8ËÉ2J$7564f49e-4657-4176-bcb2-394b4373e178
-‹python:S3457"EAdd replacement fields or use a normal string instead of an f-string.(¤ î´8ËÉ2J$96bd4f89-2a25-4521-b0f3-1bcfb9b4d1e7
-‹python:S3457“"EAdd replacement fields or use a normal string instead of an f-string.(°ø“ü8ƒ–É2J$ecff538f-3ca6-49d3-aa69-d7222af857bb
-python:S3457™"EAdd replacement fields or use a normal string instead of an f-string.(°”™³ÿÿÿÿÿ8ƒ–É2J$f50b95ca-1d85-4f96-b70a-c8ff8825621f
-ipython:S125¡"Remove this commented out code.(™Ÿ«‰ÿÿÿÿÿ8ËÉ2J$492754f2-1112-4d84-9553-29762ee4209b
+upython:S1192ù"UDefine a constant instead of duplicating this literal '0. Back to Main Menu' 5 times.(ÚÓ½“8·ğñ¹œ2
+}python:S1192½"]Define a constant instead of duplicating this literal 'BSc. Information Technology' 12 times.(úÊ«Ò8äğñ¹œ2
+ƒpython:S1192»"^Define a constant instead of duplicating this literal '1. Level 100 First Semester\n' 3 times.(İªÃßøÿÿÿÿ8åğñ¹œ2
+python:S1192¼"_Define a constant instead of duplicating this literal '2. Level 100 Second Semester\n' 3 times.(²ÂÌÙ8èğñ¹œ2
+Bpython:S125"Remove this commented out code.( Šåšüÿÿÿÿ8êğñ¹œ2
+Bpython:S125"Remove this commented out code.(áàØßüÿÿÿÿ8ìğñ¹œ2
+=python:S125"Remove this commented out code.(’÷î8íğñ¹œ2
+=python:S125"Remove this commented out code.(ÖµŒ»8ïğñ¹œ2
+Bpython:S125,"Remove this commented out code.(‹¸‘áùÿÿÿÿ8óğñ¹œ2
+=python:S125/"Remove this commented out code.(½Œ¯8ôğñ¹œ2
+=python:S1255"Remove this commented out code.(œÆ†Æ8öğñ¹œ2
+=python:S125÷"Remove this commented out code.(”şéV8÷ğñ¹œ2
+Cpython:S125°"Remove this commented out code.(¿œØóûÿÿÿÿ8„ññ¹œ2
+~python:S1854°"YRemove this assignment to local variable 'l300_second_semester'; the value is never used.(ÖŸŞ¯ıÿÿÿÿ8‡ññ¹œ2
+xpython:S1854¯"XRemove this assignment to local variable 'l300_first_semester'; the value is never used.(»¤Öû8‹ññ¹œ2
+~python:S1854®"YRemove this assignment to local variable 'l200_second_semester'; the value is never used.(Á¢âøÿÿÿÿ8Œññ¹œ2
+xpython:S1854­"XRemove this assignment to local variable 'l200_first_semester'; the value is never used.(åÉóì8ññ¹œ2
+~python:S1854¬"YRemove this assignment to local variable 'l100_second_semester'; the value is never used.(ÿêÅöşÿÿÿÿ8ññ¹œ2
+xpython:S1854«"XRemove this assignment to local variable 'l100_first_semester'; the value is never used.(úÊ«Ò8‘ññ¹œ2
+xpython:S1854"SRemove this assignment to local variable 'result_details'; the value is never used.(»Ÿ°Ğûÿÿÿÿ8“ññ¹œ2
+Kpython:S1481ç"+Remove the unused local variable "network".(êã¿Ë8¬´Ã’œ2
+upython:S3776İ"URefactor this function to reduce its Cognitive Complexity from 113 to the 15 allowed.(ÊóÀœ8­´Ã’œ2
