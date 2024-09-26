@@ -1,10 +1,10 @@
 
-špython:S1192¥"ODefine a constant instead of duplicating this literal 'Invalid Input!' 3 times.(’üÖÉùÿÿÿÿ8†å‰©—2J$36cf8d01-2842-4430-8bea-3157a9f24a78
-¨python:S1192"dDefine a constant instead of duplicating this literal 'Level 100 Second Semester Results\n' 3 times.(Ôéé(8‡å‰©—2J$d78fd438-3187-45eb-a65a-ab7bdf96c852
-­python:S1192x"cDefine a constant instead of duplicating this literal 'Level 100 First Semester Results\n' 3 times.(ÀúòÃùÿÿÿÿ8‡å‰©—2J$1f447c3f-c56f-42d7-b021-68b0f0712459
-¦python:S1192h"\Define a constant instead of duplicating this literal 'BSc. Information Technology' 6 times.(áĞ›úÿÿÿÿ8ˆå‰©—2J$013f868e-f91f-4824-b3fc-5ef9f334952c
-cpython:S125"Remove this commented out code.(¥å×¿8–å‰©—2J$4591c0eb-581b-4be0-b714-5d4cf001013d
- python:S116"WRename this field "continueSession" to match the regular expression ^[_a-z][_a-z0-9]*$.(—È±øşÿÿÿÿ8ğÌ©—2J$be0bc768-06f9-41dd-a833-e353b7659145
-•python:S116"QRename this field "sessionID" to match the regular expression ^[_a-z][_a-z0-9]*$.(çÀ†Ğ8ğÌ©—2J$487f1c7e-51d3-4ff6-afa9-cac27f300b7a
-’python:S116"NRename this field "userID" to match the regular expression ^[_a-z][_a-z0-9]*$.(ÇÕ” 8ğÌ©—2J$1cb6862d-7037-492b-8b3d-de503557efd0
-˜python:S3776b"TRefactor this function to reduce its Cognitive Complexity from 58 to the 15 allowed.(÷ì—V8—å‰©—2J$dd7ea53a-9a0c-4895-9861-ad9b12c0d549
+špython:S1192¥"ODefine a constant instead of duplicating this literal 'Invalid Input!' 3 times.(’üÖÉùÿÿÿÿ8†å‰©—2J$c7c25491-92ef-4b13-982e-becbb339b701
+¨python:S1192"dDefine a constant instead of duplicating this literal 'Level 100 Second Semester Results\n' 3 times.(Ôéé(8‡å‰©—2J$6e21c586-2c32-4fcc-89e6-26852b3068fa
+­python:S1192x"cDefine a constant instead of duplicating this literal 'Level 100 First Semester Results\n' 3 times.(ÀúòÃùÿÿÿÿ8‡å‰©—2J$3ab0682b-fdae-4063-b0cc-822c0078133b
+¦python:S1192h"\Define a constant instead of duplicating this literal 'BSc. Information Technology' 6 times.(áĞ›úÿÿÿÿ8ˆå‰©—2J$bf9345bf-4ba6-4ae8-8064-1fc45daf28a1
+cpython:S125"Remove this commented out code.(¥å×¿8–å‰©—2J$692b0811-16bb-4b6a-9137-80695b5a4c3b
+•python:S116"QRename this field "sessionID" to match the regular expression ^[_a-z][_a-z0-9]*$.(çÀ†Ğ8ğÌ©—2J$d1482438-674a-43fc-8163-4a307703ddfb
+ python:S116"WRename this field "continueSession" to match the regular expression ^[_a-z][_a-z0-9]*$.(—È±øşÿÿÿÿ8ğÌ©—2J$e97497cd-85be-41c5-9602-e635aee6e1f9
+’python:S116"NRename this field "userID" to match the regular expression ^[_a-z][_a-z0-9]*$.(ÇÕ” 8ğÌ©—2J$51d24cf2-9ce7-4ef5-981d-157b902311f4
+˜python:S3776b"TRefactor this function to reduce its Cognitive Complexity from 58 to the 15 allowed.(÷ì—V8—å‰©—2J$a5713203-78e1-42bf-a5ea-643c3c34c316
