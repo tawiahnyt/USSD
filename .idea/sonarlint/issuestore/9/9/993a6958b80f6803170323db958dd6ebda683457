@@ -1,21 +1,21 @@
 
-›python:S1192å"UDefine a constant instead of duplicating this literal '0. Back to Main Menu' 4 times.(ÚÓ½“8·ğñ¹œ2J$4aeb0e69-9c9f-4e4d-a486-e4df25489146
-£python:S1192¤"]Define a constant instead of duplicating this literal 'BSc. Information Technology' 12 times.(úÊ«Ò8äğñ¹œ2J$2d509770-b33b-4bd5-904c-bd7e2f24ba59
-©python:S1192¢"^Define a constant instead of duplicating this literal '1. Level 100 First Semester\n' 3 times.(İªÃßøÿÿÿÿ8åğñ¹œ2J$0012c617-5275-4e4e-a14e-f0659e47e91d
-¥python:S1192£"_Define a constant instead of duplicating this literal '2. Level 100 Second Semester\n' 3 times.(²ÂÌÙ8èğñ¹œ2J$9ecd4550-4d97-4aeb-bcc7-3be3186b9dbe
-¤python:S1854™"YRemove this assignment to local variable 'l300_second_semester'; the value is never used.(ÖŸŞ¯ıÿÿÿÿ8‡ññ¹œ2J$bd89fece-8722-46c4-8b9f-229676442718
-python:S1854˜"XRemove this assignment to local variable 'l300_first_semester'; the value is never used.(»¤Öû8‹ññ¹œ2J$b9b67fbc-a42b-4d23-85c3-ae632f95d644
-¤python:S1854—"YRemove this assignment to local variable 'l200_second_semester'; the value is never used.(Á¢âøÿÿÿÿ8Œññ¹œ2J$765b2880-c96c-4ef1-a48d-e574e507408a
-python:S1854–"XRemove this assignment to local variable 'l200_first_semester'; the value is never used.(åÉóì8ññ¹œ2J$273b7c51-1cac-4062-a77a-425c863e8317
-¤python:S1854•"YRemove this assignment to local variable 'l100_second_semester'; the value is never used.(ÿêÅöşÿÿÿÿ8ññ¹œ2J$13b7ced8-e4e0-4474-a6c0-020d7ebd0b26
-python:S1854”"XRemove this assignment to local variable 'l100_first_semester'; the value is never used.(úÊ«Ò8‘ññ¹œ2J$0470ad03-4740-490e-ab41-8086da5beb78
-ppython:S1481N"+Remove the unused local variable "network".(êã¿Ë8¬´Ã’œ2J$e6303053-7968-412d-84cf-702965461344
-špython:S3776D"URefactor this function to reduce its Cognitive Complexity from 114 to the 15 allowed.(ÊóÀœ8­´Ã’œ2J$0e4c6efd-6580-40ae-a3ed-b13a820fcd9a
-ipython:S125ƒ"Remove this commented out code.(÷¶“üÿÿÿÿ8å½Ò¢2J$df017d36-8702-453e-8386-104fb3df2816
-ipython:S125®"Remove this commented out code.(÷¶“üÿÿÿÿ8æ½Ò¢2J$ec8ea84e-c7db-4a7d-9667-d93131bd0d05
-dpython:S125Û"Remove this commented out code.(¾Ïæ…8æ½Ò¢2J$4a1407ad-138b-4735-b217-082849c03055
-dpython:S125à"Remove this commented out code.(õ–è‹8ç½Ò¢2J$fcebda23-9f80-47fd-9130-3e4042dbe8ba
-dpython:S125í"Remove this commented out code.(¾Ïæ…8è½Ò¢2J$7581bbf2-95a3-4a1f-a230-1571bb2d89df
-dpython:S125¾"Remove this commented out code.(¾Ïæ…8é½Ò¢2J$64d5e893-ee7a-44c0-9f32-8c6cf9807c72
-dpython:S125Å"Remove this commented out code.(ŒÄğ´8é½Ò¢2J$ec0a094a-e2b0-4936-ab56-9ff56c5cdc62
-ipython:S125Ì"Remove this commented out code.(ÖÂ¯Âúÿÿÿÿ8ê½Ò¢2J$07978776-37f7-4d9b-88e1-3f41c1430960
+›python:S1192å"UDefine a constant instead of duplicating this literal '0. Back to Main Menu' 4 times.(ÚÓ½“8·ğñ¹œ2J$1b9ea8a3-5462-45d8-ac81-36fbc7e4070c
+£python:S1192¤"]Define a constant instead of duplicating this literal 'BSc. Information Technology' 12 times.(úÊ«Ò8äğñ¹œ2J$6d05a570-8539-4a09-9d8d-6f95817e1e41
+©python:S1192¢"^Define a constant instead of duplicating this literal '1. Level 100 First Semester\n' 3 times.(İªÃßøÿÿÿÿ8åğñ¹œ2J$124be9ef-f033-43af-9745-3fb0b30c2ee3
+¥python:S1192£"_Define a constant instead of duplicating this literal '2. Level 100 Second Semester\n' 3 times.(²ÂÌÙ8èğñ¹œ2J$b7c4d478-efea-4bed-961c-b6dac7f395eb
+¤python:S1854™"YRemove this assignment to local variable 'l300_second_semester'; the value is never used.(ÖŸŞ¯ıÿÿÿÿ8‡ññ¹œ2J$7d510a50-c25b-4743-9fb1-743cb1fa0b98
+python:S1854˜"XRemove this assignment to local variable 'l300_first_semester'; the value is never used.(»¤Öû8‹ññ¹œ2J$5209b1cb-d7e2-4205-bc9b-5d0b64b62240
+¤python:S1854—"YRemove this assignment to local variable 'l200_second_semester'; the value is never used.(Á¢âøÿÿÿÿ8Œññ¹œ2J$1b52df96-d680-48c8-a27f-26527cfec41a
+python:S1854–"XRemove this assignment to local variable 'l200_first_semester'; the value is never used.(åÉóì8ññ¹œ2J$668dd8b6-5225-4fc4-ae35-6e337a6fb890
+¤python:S1854•"YRemove this assignment to local variable 'l100_second_semester'; the value is never used.(ÿêÅöşÿÿÿÿ8ññ¹œ2J$cf5a409f-8c87-4907-91e3-515349b11e62
+python:S1854”"XRemove this assignment to local variable 'l100_first_semester'; the value is never used.(úÊ«Ò8‘ññ¹œ2J$9aafe51c-c2a1-48d5-8f10-9dff7ca60dbd
+ppython:S1481N"+Remove the unused local variable "network".(êã¿Ë8¬´Ã’œ2J$39ab7400-d9be-4ebe-be2c-e216d5289dd4
+špython:S3776D"URefactor this function to reduce its Cognitive Complexity from 114 to the 15 allowed.(ÊóÀœ8­´Ã’œ2J$a7898df8-74dd-402b-a767-92391deb484c
+ipython:S125ƒ"Remove this commented out code.(÷¶“üÿÿÿÿ8å½Ò¢2J$cc56f2b9-637a-49df-8694-efc6f446aa4d
+ipython:S125®"Remove this commented out code.(÷¶“üÿÿÿÿ8æ½Ò¢2J$c5bf81b4-c30a-49b5-a946-dfc7c3b2643f
+dpython:S125Û"Remove this commented out code.(¾Ïæ…8æ½Ò¢2J$f0b192c2-ebd0-4f06-b96f-49f8571f5e23
+dpython:S125à"Remove this commented out code.(õ–è‹8ç½Ò¢2J$60cf6ca4-fa10-4e1e-802a-a22dacde34b0
+dpython:S125í"Remove this commented out code.(¾Ïæ…8è½Ò¢2J$73d8397d-48d6-49db-915b-b1a21648452c
+dpython:S125¾"Remove this commented out code.(¾Ïæ…8é½Ò¢2J$50c0c7bb-6203-439b-b469-dd3d212bff26
+dpython:S125Å"Remove this commented out code.(ŒÄğ´8é½Ò¢2J$4b1af90a-2042-4b6d-b2a5-037d142e06f3
+ipython:S125Ì"Remove this commented out code.(ÖÂ¯Âúÿÿÿÿ8ê½Ò¢2J$6cc83399-7bc1-43f1-bb50-9330ba7c3b7e

@@ -1,5 +1,5 @@
-Flask
-requests
-python-docx
-docx2pdf
-pywin32
+Flask==2.0.2
+requests==2.26.0
+python-docx==0.8.11
+docx2pdf==0.1.8
+pywin32==301

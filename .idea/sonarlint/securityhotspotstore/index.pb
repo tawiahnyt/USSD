@@ -16,3 +16,5 @@ test.ipynb,9\0\90479d8bc9f8dfa7116261e4ed6ed71a98437648
 test.py,a\3\a36e355ddb203d7d4133221f339dc406cb9f480f
 A
 docx_converter.py,f\e\fe8ad9083b3fb9d98d444996ee68956a041db74d
+@
+requirements.txt,1\9\19359a61ae2446b51b549167b014da2fcf265768
